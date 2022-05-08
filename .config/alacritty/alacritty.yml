@@ -1,0 +1,11 @@
+scrolling:
+  history: 10000
+window:
+  # decorations: "none"
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+  decorations: buttonless
+key_bindings:
+  - { key: Key6,     mods: Control, chars: "\x1e"                        }

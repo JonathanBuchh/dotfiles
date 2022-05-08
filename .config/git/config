@@ -1,0 +1,8 @@
+[user]
+    email = jonathan@buchh.org
+    name = Jonathan Buchholz
+[core]
+    editor = nvim
+    excludesFile = ~/.config/git/gitignore
+[init]
+    defaultBranch = main
