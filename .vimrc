@@ -1,6 +1,7 @@
 set nocompatible
 
 call plug#begin()
+Plug 'ap/vim-css-color'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
