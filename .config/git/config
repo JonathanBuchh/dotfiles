@@ -6,3 +6,5 @@
     excludesFile = ~/.config/git/gitignore
 [init]
     defaultBranch = main
+[pull]
+	rebase = true
