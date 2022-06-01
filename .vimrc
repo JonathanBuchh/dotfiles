@@ -61,15 +61,9 @@ autocmd BufWritePre * %s/\n\+\%$//e
 autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
 " Vimwiki
-let g:vimwiki_list = [{'path': '~/Documents/Notes/Dailies', 'syntax': 'markdown', 'ext': '.md', 'diary_rel_path' : ''}]
-autocmd VimEnter * let g:vimwiki_syntaxlocal_vars['markdown']['Link1'] = g:vimwiki_syntaxlocal_vars['default']['Link1']
-let g:zettel_link_format="[[%link]]"
+let g:vimwiki_list = [{'path': '~/Documents/Notes', 'syntax': 'markdown', 'ext': '.md', 'diary_rel_path' : 'Dailies'}]
 nmap <C-Up> <Plug>VimwikiDiaryNextDay
 nmap <C-Down> <Plug>VimwikiDiaryPrevDay
-nnoremap <silent> <leader>w<leader>w :VimwikiMakeDiaryNote 1<CR>
-nnoremap <silent> <leader>ww :VimwikiIndex 1<CR>
-let g:markdown_folding = 1
-let g:vimwiki_folding = 'custom'
 
 " Custom appearance
 syntax enable
