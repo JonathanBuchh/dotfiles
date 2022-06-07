@@ -76,5 +76,5 @@ highlight StatusLineNC cterm=none ctermbg=none ctermfg=darkgrey
 highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
 highlight lineNr ctermfg=grey cterm=italic
 
-autocmd FileType markdown setlocal tw=80 et ts=2 sw=2
+autocmd FileType markdown setlocal tw=80
 autocmd FileType arduino setlocal et ts=4 sw=4
