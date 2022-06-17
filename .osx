@@ -413,6 +413,9 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 # Disable the annoying line marks
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
+# Make bash default shell
+chsh -s "$(brew --prefix)/bin/bash"
+
 ###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################
