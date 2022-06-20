@@ -1,5 +1,4 @@
 #!/bin/sh
-
 cd ~/Documents/Notes
 git add .
 git commit -m "$(date "+%Y-%m-%d")"

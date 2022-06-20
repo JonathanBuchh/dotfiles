@@ -1,4 +1,3 @@
 #!/bin/sh
-
 cd ~/Documents/Notes
 nvim Dailies/$(date "+%Y-%m-%d").md
