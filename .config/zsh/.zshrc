@@ -85,6 +85,6 @@ bindkey -M visual '^[[P' vi-delete
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Use GPG for SSH
-export GPG_TTY="$(tty)"
+# export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
