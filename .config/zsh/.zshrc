@@ -27,7 +27,6 @@ zstyle ":completion:*" hosts off
 zstyle ":completion:*" menu select=long-list select=0
 zstyle ":completion:*" use-cache on
 zstyle ":completion:*" verbose yes
-zstyle ":completion:*:kill:*" command "ps -u ${USER} -o pid,%cpu,tty,cputime,cmd"
 
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
@@ -85,6 +84,6 @@ bindkey -M visual '^[[P' vi-delete
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Use GPG for SSH
-# export GPG_TTY="$(tty)"
+export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent

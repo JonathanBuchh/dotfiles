@@ -5,6 +5,7 @@ Plug 'ap/vim-css-color'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'nathangrigg/vim-beancount'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -17,15 +18,12 @@ set clipboard+=unnamedplus
 set laststatus=2
 set t_Co=256
 set encoding=utf-8
-set tabstop=8
-set shiftwidth=8
 set autoindent
 set magic
-set number
+set relativenumber
 set scrolloff=3
 set sidescroll=3
 set ruler
-set cc=80
 set nowrap
 set ignorecase
 set smartcase
@@ -76,5 +74,8 @@ highlight StatusLineNC cterm=none ctermbg=none ctermfg=darkgrey
 highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
 highlight lineNr ctermfg=grey cterm=italic
 
-autocmd FileType markdown setlocal tw=80
+autocmd FileType vimwiki setlocal ts=4 sw=4 et
 autocmd FileType arduino setlocal et ts=4 sw=4
+
+set wrap
+set linebreak
