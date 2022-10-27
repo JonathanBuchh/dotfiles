@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~/Documents/Notes
+cd ~/Documents/Notes || exit
 git add .
 git commit -m "$(date "+%Y-%m-%d")"
 git push

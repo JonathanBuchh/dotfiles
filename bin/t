@@ -1,3 +1,0 @@
-#!/bin/sh
-cd ~/Documents/Notes
-vim Dailies/$(date -v+1d +%Y-%m-%d).md

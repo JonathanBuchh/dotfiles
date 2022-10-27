@@ -5,7 +5,6 @@ Plug 'ap/vim-css-color'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'nathangrigg/vim-beancount'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -59,9 +58,12 @@ autocmd BufWritePre * %s/\n\+\%$//e
 autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
 " Vimwiki
-let g:vimwiki_list = [{'path': '~/Documents/Notes', 'syntax': 'markdown', 'ext': '.md', 'diary_rel_path' : 'Dailies'}]
+let g:vimwiki_list = [{'path': '~/Documents/', 'syntax': 'markdown', 'ext': '.md', 'diary_rel_path' : 'Dailies'}]
 nmap <C-Up> <Plug>VimwikiDiaryNextDay
 nmap <C-Down> <Plug>VimwikiDiaryPrevDay
+
+" LaTeX
+nnoremap <leader>c :!pdflatex % && biber $(basename % .tex) && pdflatex % && open $(basename % .tex).pdf && open -a Alacritty<CR>
 
 " Custom appearance
 syntax enable

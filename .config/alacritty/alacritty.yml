@@ -6,6 +6,7 @@ window:
     y: 10
   dynamic_padding: true
   decorations: buttonless
+  opacity: 0.75
 key_bindings:
   - { key: Key6,     mods: Control, chars: "\x1e"                        }
 font:
