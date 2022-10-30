@@ -58,7 +58,7 @@ autocmd BufWritePre * %s/\n\+\%$//e
 autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
 " Vimwiki
-let g:vimwiki_list = [{'path': '~/Documents/', 'syntax': 'markdown', 'ext': '.md', 'diary_rel_path' : 'Dailies'}]
+let g:vimwiki_list = [{'path': '~/Documents/Notes', 'syntax': 'markdown', 'ext': '.md', 'diary_rel_path' : '04 - Dailies'}]
 nmap <C-Up> <Plug>VimwikiDiaryNextDay
 nmap <C-Down> <Plug>VimwikiDiaryPrevDay
 
