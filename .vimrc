@@ -37,6 +37,7 @@ set noswapfile
 set nofoldenable
 set lazyredraw
 set spell
+set termguicolors
 
 noremap <silent> k gk
 noremap <silent> j gj
@@ -65,16 +66,9 @@ nmap <C-Down> <Plug>VimwikiDiaryPrevDay
 " LaTeX
 nnoremap <leader>c :!pdflatex % && biber $(basename % .tex) && pdflatex % && open $(basename % .tex).pdf && open -a Alacritty<CR>
 
-" Custom appearance
 syntax enable
-highlight Search ctermbg=12
-highlight Normal cterm=none ctermfg=white
-highlight clear SignColumn
-highlight Comment cterm=bold ctermfg=none
-highlight StatusLine cterm=none ctermbg=none ctermfg=darkgrey
-highlight StatusLineNC cterm=none ctermbg=none ctermfg=darkgrey
-highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
-highlight lineNr ctermfg=grey cterm=italic
+set background=dark
+colorscheme selenized
 
 autocmd FileType vimwiki setlocal ts=4 sw=4 et
 autocmd FileType arduino setlocal et ts=4 sw=4
