@@ -34,15 +34,15 @@ set showmatch
 set hlsearch
 set mouse=a
 set noswapfile
-set nofoldenable
+" set nofoldenable
 set lazyredraw
 set spell
 set termguicolors
+set wrap
+set linebreak
 
 noremap <silent> k gk
 noremap <silent> j gj
-
-let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 0.5, 'relative': v:true, 'yoffset': 1.0, 'border': 'none' } }
 
 let mapleader = "\<space>"
 nnoremap \\ :noh<cr> " Clear higlighting
@@ -62,6 +62,8 @@ autocmd BufWritePre *.[ch] %s/\%$/\r/e
 let g:vimwiki_list = [{'path': '~/Documents/Notes', 'syntax': 'markdown', 'ext': '.md', 'diary_rel_path' : '04 - Dailies'}]
 nmap <C-Up> <Plug>VimwikiDiaryNextDay
 nmap <C-Down> <Plug>VimwikiDiaryPrevDay
+let g:markdown_folding = 1
+let g:vimwiki_folding='custom'
 
 " LaTeX
 nnoremap <leader>c :!pdflatex % && biber $(basename % .tex) && pdflatex % && open $(basename % .tex).pdf && open -a Alacritty<CR>
@@ -72,6 +74,3 @@ colorscheme selenized
 
 autocmd FileType vimwiki setlocal ts=4 sw=4 et
 autocmd FileType arduino setlocal et ts=4 sw=4
-
-set wrap
-set linebreak
