@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~/Documents/01\ -\ Notes || exit
+cd "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes/" || exit
 git pull
 git add .
 git commit -m "$(date "+%Y-%m-%d")"
