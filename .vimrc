@@ -13,31 +13,33 @@ set clipboard+=unnamedplus
 " set autoindent
 " set magic
 " set relativenumber
-" set scrolloff=3
-" set sidescroll=3
+set scrolloff=3
+set sidescroll=3
 " set ruler
 " set nowrap
-" set ignorecase
+set ignorecase
 " set smartcase
 " set splitbelow
 " set hidden
 " set notimeout
-" set incsearch
 " set showmatch
 " set hlsearch
-" set mouse=a
-" set noswapfile
+set mouse=a
+set noswapfile
 " set lazyredraw
-" set spell
+set spell
 " set termguicolors
 " set wrap
 " set linebreak
- 
+" set scrolloff=999
+
 noremap <silent> k gk
 noremap <silent> j gj
 
+let mapleader = "\<space>"
 nnoremap \\ :noh<cr> " Clear higlighting
 nnoremap <C-p> :FZF<cr>
+nnoremap <leader>c :!make<cr>
 
 " Delete trailing whitespace and newlines
 autocmd BufWritePre * %s/\s\+$//e
